@@ -1,0 +1,80 @@
+body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            font-size: 14px;
+        }
+        th {
+            background-color: #019879;
+            color: white;
+            text-transform: uppercase;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #f4f4f4;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f3f3f3;
+        }
+        .pagination-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            padding-bottom: 20px;
+        }
+        .pagination-button {
+            padding: 10px 15px;
+            margin: 0 5px;
+            border: none;
+            background-color: #019879;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+        .pagination-button:disabled {
+            background-color: #019879;
+            cursor: not-allowed;
+        }
+        .pagination-button:hover:not(:disabled) {
+            background-color: #007a60;
+        }
+        .current-page-indicator {
+            padding: 10px 15px;
+            margin: 0 5px;
+            background-color: #019879;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        @media (max-width: 600px) {
+            th, td {
+                padding: 8px 10px;
+                font-size: 12px;
+            }
+            .pagination-button, .current-page-indicator {
+                padding: 8px 12px;
+                font-size: 12px;
+            }
+        }
